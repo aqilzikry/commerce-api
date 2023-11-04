@@ -112,7 +112,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(x =>
-    x.WithOrigins("https://localhost:4200")
+    x.AllowAnyOrigins()
     .AllowAnyHeader()
     .AllowCredentials()
 );
