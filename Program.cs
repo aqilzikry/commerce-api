@@ -112,7 +112,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors(x =>
-    x.AllowAnyOrigins()
+    x.AllowAnyOrigin()
     .AllowAnyHeader()
     .AllowCredentials()
 );
