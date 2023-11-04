@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  commerceapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - dbdata:/CommerceAPI.pdb
+    ports:
+      - "7027:80"
+
+volumes:
+  dbdata:
