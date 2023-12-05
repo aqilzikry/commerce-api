@@ -114,6 +114,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors(x =>
     x.AllowAnyOrigin()
     .AllowAnyHeader()
+    .AllowAnyMethod()
 );
 
 //app.UseHttpsRedirection();
